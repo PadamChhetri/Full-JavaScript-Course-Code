@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  
+<script>
+
+  // let product={
+  //   Company:'Mango',
+  //   price:50,
+  //   item_name:'T-shirt', 
+  //   'item-name':'shirt', 
+
+  // };
+  // console.log(product); 
+  // console.log(product.Company);
+  // console.log(product.price);
+  // console.log(product.item_name);
+
+  // product.Company='Banana'; //can change the name of object 
+  // console.log(product.Company); //product.company access the object by DOT(.) notation
+  
+  //console.log(product['item_name']);  //product['Company'] access the object by bracket () notation
+  // let propertyName='item-name'; //objct can be defined by variables also 
+  // console.log(product[propertyName]);
+
+  // delete product.Company;
+  // delete product['Company']; // delete the name of product
+  // console.log(product);
+
+
+  //inside function
+  
+  // let product={
+  //   Company:'Mango',
+  //   price:50,
+  //   item_name:'T-shirt', 
+  //   'item-name':'shirt', 
+
+  //   displayPrice:function(){
+  //     console.log(`price of the product is ${this.price}`);
+  //   }
+  //  };
+  // product.displayPrice();
+
+
+  //AutoBoxing
+  // console.log('This is Padam Chhetri'.toUpperCase());
+
+  // Object References
+  // let a=5;
+  // let b=a;
+  // console.log(`a=${a},b=${b}`);
+  // a=8;
+  // console.log(`a=${a},b=${b}`);
+
+
+  // let x={num:5};
+  // let y=x;
+  // console.log(`x=${x.num},y=${y.num}`);
+  // x.num=8;
+  // console.log(`x=${x.num},y=${y.num}`);
+
+
+  // let p={pop:5};
+  // let q={pop:5};
+  // console.log(p == q);
+
+
+  //Destructring
+  let product={
+    Company:'Mango',
+    price:50,
+    item_name:'T-shirt', 
+  }
+  let {Company,price}=product;
+  console.log(Company,price);
+
+  //Method Shorthand
+
+
+</script>
+
+</body>
+</html>

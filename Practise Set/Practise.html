@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Document</title>
+</head>
+<body>
+
+  <button id="my-button" onclick="buttonPressed();">0 </button>
+<script>
+
+  let noOfTimeClicked=0;
+function buttonPressed(){
+  let button=document.querySelector('#my-button');
+noOfTimeClicked++;
+button.innerText = noOfTimeClicked;
+}
+
+
+</script>
+
+
+<!-- 
+  <h3 id="greeting"></h3>
+  <script>
+    function doGreeting(personName){
+let date=new Date();
+let hours=date.getHours();
+// let hours= 13;
+let heading =document.querySelector('#greeting');
+console.log(hours);
+if(hours >5 && hours < 12){
+ heading.innerText=`Good Morning ${personName}`;
+}
+else if(hours > 12 && hours <18){
+  heading.innerText=`Good Afternoon ${personName}`;
+}
+else{
+  heading.innerText=`Good Night ${personName}`;
+}
+}
+doGreeting('Dear');
+
+  </script> -->
+  
+</body>
+</html>
